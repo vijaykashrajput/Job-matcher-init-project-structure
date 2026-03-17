@@ -1,4 +1,5 @@
-# AI Resume Analyzer + Job Matcher
+
+AI Resume Analyzer + Job Matcher
 
 This project analyzes a resume and matches it with job listings using APIs and AI.
 
