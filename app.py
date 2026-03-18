@@ -5,7 +5,7 @@ from src.resume_parser import extract_resume_text, extract_skills
 from src.job_fetcher import fetch_jobs
 from src.matcher import calculate_match_score, explain_match
 
-st.title("AI Resume Analyzer + Job Matcher 🚀")
+st.title("AI Resume Analyzer + Job Matcher")
 
 uploaded_file = st.file_uploader("Upload your resume (PDF)", type=["pdf"])
 
@@ -57,8 +57,8 @@ if uploaded_file is not None:
         st.write(f"**{job['title']}** - {job['company']}")
         st.write(f"Match Score: {job['score']}%")
 
-        st.write("✅ Matched Skills:", job["matched"])
-        st.write("❌ Missing Skills:", job["missing"])
+        st.write("Matched Skills:", job["matched"])
+        st.write("Missing Skills:", job["missing"])
 
         st.write("---")
 
